@@ -1,0 +1,48 @@
+html{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    background-attachment: fixed;
+
+}
+header{ /*Content*/
+    background-color: #ffffff;
+    margin: -0.5rem;
+    position: sticky;
+    top: 0;
+}
+#logo{
+    max-width: 40%;
+    height: auto;
+}
+.banner{ /*Banner Image and Text Styling*/
+    background-attachment: fixed;
+    background-image: url(./image/MainBanner.jpg);
+    background-position: center;
+    padding-top: 40%;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-size: cover;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin: -0.5rem;
+}
+main{
+    margin-left: -2rem;
+}
+#pfp{
+    max-width: 100px;
+    height: auto;
+}
+.folderImg{
+    max-width: 100px;
+    height: auto;
+} 
