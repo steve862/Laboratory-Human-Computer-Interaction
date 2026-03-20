@@ -1,0 +1,125 @@
+html{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #EFE9E3;
+    font-size: 20px;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    background-attachment: fixed;
+
+}
+.banner{ /*Banner Image and Text Styling*/
+    background-attachment: fixed;
+    background-image: url(../image/banner2.jpg);
+    background-position: center;
+    padding-top: 40%;
+    padding-bottom: 20px;
+    background-size: cover;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin: -0.5rem;
+}
+h1{ /*Main Heading*/
+    margin: -0.5rem;
+    text-transform: uppercase;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    background-color: #C9B59C;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 35px;
+    font-size: 2rem;
+    
+}
+h2{
+    padding-left: 2rem;
+}
+p{
+    padding-left: 2.5rem;
+    text-align: justify;
+    padding-right: 2.5rem;
+}
+ul{
+    padding-left: 4rem;
+    padding-right: 2.5rem;
+}
+ol{
+    padding-left: 4rem;
+    padding-right: 2.5rem;
+}
+#sampleImage{ /*Sample Image*/
+    width: 50%;
+    height: auto;
+    margin-left: 2rem;
+    border-radius: 20px;
+    border-color: #C9B59C;
+    border-style: solid;
+    border-width: 2px;
+    display: block;
+    max-width: 100%;
+    margin-right: auto;
+
+}
+caption{
+    background-color: #C9B59C;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+} 
+table{ /*Sample Table*/
+    border-collapse: collapse;
+    border-color: #C9B59C;
+    width: 80%;
+    margin-left: 2rem;
+    background-color: #ffffff;
+    border: 0px;
+    border-radius: 20px;
+}
+th{
+    background-color: #D9CFC7;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+.form-label-name{ /*Sample Form*/
+    padding-left: 2.4rem;
+    font-weight: 600;
+}
+.form-label{
+    background-size: contain;
+    background-color: #ffffff;
+    display: block;
+    margin-bottom: -20px;
+    width: 60%;
+    padding-left: 0.7rem;
+    border-radius: 20px;
+    border: #C9B59C solid 2px;
+}
+.form-label2{
+    display: block;
+    padding-left: 3rem;
+}
+.comment{
+    background-color: #ffffff;
+    display: block;
+    margin-bottom: -20px;
+    width: 50%;
+    padding-left: 0.7rem;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    border-radius: 20px;
+    border: #C9B59C solid 2px;
+}
