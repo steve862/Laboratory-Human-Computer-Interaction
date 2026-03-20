@@ -11,7 +11,6 @@ header{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(0.5rem, 2vw, 1rem);
 }
 #logo{
     width: 100%;
