@@ -173,18 +173,11 @@ body{
     transform: scale(1.05);
     transition: all 0.1s ease;
 }
-.asideContainer li:active{
-    transform: scale(0.97);
-    transition: all 0.1s ease;
-}
 .asideContainer a{
     color: #e5e5e5;
     text-decoration: none;
 }
 .asideContainer a:hover{
-    color: #e10600;
-}
-.asideContainer a:active{
     color: #e10600;
 }
 .footerMain{
@@ -324,6 +317,21 @@ body{
         width: 48%;
     }
     .asideContainer{
+        display: none;
+    }
+    .asideContainer h3{
+        display: none;
+    }
+    .asideMain1{
+        display: none;
+    }
+    .asideMain2{
+        display: none;
+    }
+    .asideContainer ul{
+        display: none;
+    }
+    .asideContainer a{
         display: none;
     }
     .fiaLogo img{
