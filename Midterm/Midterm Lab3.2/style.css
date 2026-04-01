@@ -324,7 +324,7 @@ body{
         width: 48%;
     }
     .asideContainer{
-        width: 0vw;
+        display: none;
     }
     .fiaLogo img{
         width: 50px;
