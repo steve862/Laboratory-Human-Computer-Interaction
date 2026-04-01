@@ -84,6 +84,7 @@ body{
 #bannerHeroVideo{
     width: 100vw;
     height: 80vh;
+    margin-inline: -0.5rem;
     object-fit: cover;
     margin-inline: -0.5rem;
 }
