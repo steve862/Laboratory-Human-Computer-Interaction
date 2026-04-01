@@ -6,6 +6,7 @@ body{
     font-style: normal;
     overflow-x: hidden;
     margin: 0;
+    padding: 0;
 }
 .headerMain{
     background-color: #19191a; 
@@ -194,18 +195,20 @@ body{
     display: flex;
     flex-direction: column;
 }
-.footerMainContainerLogo{
-    display:flex;
-    flex-direction: row;
+.footerMainContainerLogo {
+    display: flex;
     align-items: center;
+    gap: 10px; /* space between logo and line */
 }
-.footerMainContainerLogo hr{
-    width: 100vw;
+
+.footerMainContainerLogo hr {
+    flex: 1; /* take all remaining space */
     border: none;
     border-top: #e10600 solid 5px;
     border-bottom: #e10600 solid 5px;
     padding-block: 2px;
-    transform: skewX(-50deg);
+    transform: skewX(-50deg); /* slightly less skew to prevent clipping */
+    margin: 0; /* remove default margin */
 }
 .footerMainContainer1{
     display: flex;
@@ -269,13 +272,9 @@ body{
     transform: scale(0.97);
     transition: all 0.1s ease;
 }
-.footerBottom {
-    background-color: #010101;
-    padding: 10px 7vw;
-    margin-inline: -7vw;
-}
 .footerBottom p {
     font-size: 0.7rem;
+    padding: 10px;
     text-align: center;
     margin: 0;
     color: #262626;
@@ -351,5 +350,4 @@ body{
         width: 50px;
         height: 10px;
     }
-
  }
