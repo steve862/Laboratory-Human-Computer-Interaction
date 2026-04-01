@@ -1,0 +1,355 @@
+body{
+    background-color: #0f0f0f;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    margin: 0;
+}
+.headerMain{
+    background-color: #19191a; 
+    padding: 2px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    margin-inline: -0.5rem;
+    gap: 10%;
+}
+.f1Logo{
+    width: 150px;
+    height: auto;
+}
+.searchBarContainer{
+    padding: 5px;
+    background-color: #222;
+    border: 1px solid #333;
+    width: 380px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.material-symbols-outlined {
+    color: #a0a0a0;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+}
+#searchBarInput{
+    color: #e5e5e5;
+    background: #222;
+    padding: 5px 10px;
+    border: none;
+    outline: none; 
+}
+.navMain{
+    background-color: #19191a; 
+    padding: 5px 5px;
+    margin-inline: -0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.2s ease;
+}
+.navMain:hover{
+    background-color: #171717; 
+}
+.navMain a{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #e5e5e5;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.navMain a:hover{
+    color: #e10600;
+    text-decoration: underline;
+}
+.navMain a:active{
+    color: #e10600;
+    transform: scale(0.95);
+}
+.mainSectionBanner{
+    margin-inline: -0.5rem;
+    display: flex;
+    justify-content: center;
+}
+#bannerHeroVideo{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
+.layoutMain{
+    margin-block: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.articleMainContent{
+    color: #e5e5e5;
+    background-color: #1a1a1a;
+    width: 85vw;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.sectionMainHeader{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 25px;
+}
+.sectionMainHeaderSpan{
+    color: #e10600;
+}
+.teamBanner{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.teamBanner video{
+    border-radius: 15px;
+    width: 17vw;
+    height: auto;
+    transition: all 0.2s ease;
+}
+.teamBanner video:hover{
+    transform: scale(1.03);
+}
+.teamBanner video:active{
+    transform: scale(0.97);
+}
+.asideContainer{
+    font-size: clamp(0.3rem, 1.3vw, 1rem);
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.asideContainer:hover{
+    width: 20%;
+}
+.asideContainer h3{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: #e5e5e5;
+    margin-left: 10px;
+}
+.asideMain1{
+    background-color: #1a1a1a;
+    padding-left: 5px;
+    padding-bottom: 30px;
+    border: rgba(0, 0, 0, 0.042) solid 1px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.052);
+}
+.asideMain2{
+    background-color: #1a1a1a;
+    padding-left: 5px;
+    padding-bottom: 30px;
+    border: rgba(0, 0, 0, 0.042) solid 1px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.052);
+}
+.asideContainer ul{
+    list-style: none;
+    padding-left: 17px;
+    margin: 0;
+}
+.asideContainer li:hover{
+    transform: scale(1.05);
+    transition: all 0.1s ease;
+}
+.asideContainer li:active{
+    transform: scale(0.97);
+    transition: all 0.1s ease;
+}
+.asideContainer a{
+    color: #e5e5e5;
+    text-decoration: none;
+}
+.asideContainer a:hover{
+    color: #e10600;
+}
+.asideContainer a:active{
+    color: #e10600;
+}
+.footerMain{
+    color: #e5e5e5;
+    background-color: #0a0a0a;
+    padding-inline: 20px;
+    padding-top : 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footerMainContainerLogo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footerMainContainerLogo hr{
+    width: 100vw;
+    border: none;
+    border-top: #e10600 solid 5px;
+    border-bottom: #e10600 solid 5px;
+    padding-block: 2px;
+    transform: skewX(-50deg);
+}
+.footerMainContainer1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 100px;
+    margin: 5px 10px 50px;
+}
+.footerMainContainer1 h3{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: #e5e5e5;
+}
+.footerMainContainer1 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.footerMainContainer1 a{
+    color: #e5e5e5;
+    text-decoration: none;
+}
+.footerMainContainer1 a:hover{
+    color: #e10600;
+}
+.footerMainContainer1 a:active{
+    color: #e10600;
+}
+.fiaLogo img{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    transition: all 0.1s ease;
+}
+.sponsorsLogo{
+    padding-bottom: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: fit-content;
+}
+.sponsorsLogo img{
+    background-color: #0e0e0e00;
+    padding: 10px;
+    border-radius: 10px;
+    width: 7vw;
+    height: auto;
+    transition: all 0.1s ease;
+}
+.sponsorsLogo img:hover{
+    background-color: #121212;
+    transform: scale(1.05);
+}
+.sponsorsLogo img:active{
+    transform: scale(0.97);
+    transition: all 0.1s ease;
+}
+.footerBottom {
+    background-color: #010101;
+    padding: 10px 7vw;
+    margin-inline: -7vw;
+}
+.footerBottom p {
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 0;
+    color: #262626;
+}
+@media (max-width: 768px) { /*Mobile View (well I guess it works? napagtripan lang sir)*/
+    #f1Logo{
+        width: 100px;
+        height: auto;
+    }
+    .searchBarContainer{
+        padding: 1px;
+        width: 120px;
+        position: absolute;
+        right: 20px;
+        top: 10%;
+    }
+    #searchBarInput{
+        color: #e5e5e5;
+        background: #222;
+        padding: 5px;
+        width: 70px;
+        border-radius: 20px;
+        border: none;
+        outline: none; 
+    }
+    .navMain a{
+        font-size: 0.8rem;
+    }
+    .headerMain {
+        position: relative;
+        padding: 2px 10px 5px;
+    }
+    .sectionMainHeader{
+        padding: 1px 5px;
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+    #bannerHeroVideo{
+        width: 100vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+    .articleMainContent{
+        width: 100vw;
+    }
+    .teamBanner video{
+        width: 48%;
+    }
+    .asideContainer{
+        width: 0vw;
+    }
+    .fiaLogo img{
+        width: 50px;
+        height: auto;
+        margin-inline: 29vw;
+    }
+    .sponsorsLogo{
+        gap: 1px;
+    }
+    .footerBottom p {
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 1024px) { /*Tablet view*/
+    .footerMainContainer1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        margin: 5px 10px 50px;
+    }
+    .sponsorsLogo img{
+        width: 50px;
+        height: 10px;
+    }
+
+ }
