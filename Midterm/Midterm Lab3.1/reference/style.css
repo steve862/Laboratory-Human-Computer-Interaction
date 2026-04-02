@@ -1,0 +1,46 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+.headerBoxR{
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+}
+.boxR1{
+    font-size: 2rem;
+    background-color: royalblue;
+    color: white;
+    padding: 15vh 3vw;
+    width: 40%;
+    border: black solid 20px;
+}
+.boxR1 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 900;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+.boxR1 a:hover{
+    color: blueviolet;
+    padding: 20px;
+}
+.boxR2{
+    background-color: salmon;
+    padding: 35vh 3vw;
+    width: 40%;
+    border-block: black solid 20px;
+    border-inline: black solid 10px;
+    position: relative;
+    left: 48.75%;
+}
+.boxR3{
+    background-color: seagreen;
+    padding: 35vh 3vw;
+    width: 40%;
+    border: black solid 20px;
+}
