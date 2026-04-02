@@ -74,14 +74,21 @@ body{
     color: #e10600;
     transform: scale(0.95);
 }
-.mainSectionBanner{
-    display: flex;
-    justify-content: center;
-}
 #bannerHeroVideo{
     width: 100vw;
     height: 80vh;
     object-fit: cover;
+    background: url(./image/fallBackHeroBannerImage.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.layoutMain{
+    margin-block: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
 }
 .layoutMain{
     margin-block: 20px;
