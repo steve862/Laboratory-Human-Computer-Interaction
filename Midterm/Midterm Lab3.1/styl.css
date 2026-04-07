@@ -10,6 +10,7 @@ main{
     text-align: justify;
     padding: 100px 50px;
     width: 27.45%;
+    display: flex;
 }
 .box2{
     font-family: "Inter", sans-serif;
