@@ -1,19 +1,19 @@
 body{
-    background-color: #0f0f0f;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    overflow-x: hidden;
-    margin: 0;
+    background-color: #0f0f0f;
     padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 .headerMain{
     background-color: #19191a; 
     padding: 2px 10px 5px;
+    gap: 10%;
     display: flex;
     flex-direction: row;
-    gap: 10%;
 }
 .f1Logo{
     width: 150px;
@@ -21,14 +21,14 @@ body{
 }
 .searchBarContainer{
     padding: 5px;
+    width: 380px;
     background-color: #222;
     border: 1px solid #333;
-    width: 380px;
     border-radius: 20px;
+    gap: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
 }
 .material-symbols-outlined {
     color: #a0a0a0;
@@ -40,7 +40,7 @@ body{
 }
 #searchBarInput{
     color: #e5e5e5;
-    background: #222;
+    background-color: #222;
     padding: 5px 10px;
     border: none;
     outline: none; 
@@ -48,11 +48,11 @@ body{
 .navMain{
     background-color: #19191a; 
     padding: 5px 5px;
+    transition: all 0.2s ease;
+    gap: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
-    transition: all 0.2s ease;
 }
 .navMain:hover{
     background-color: #171717; 
@@ -77,18 +77,18 @@ body{
 #bannerHeroVideo{
     width: 100vw;
     height: 80vh;
-    object-fit: cover;
     background: url(./image/fallBackHeroBannerImage.webp);
+    object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .layoutMain{
     margin-block: 20px;
+    gap: 10px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 10px;
 }
 .articleMainContent{
     color: #e5e5e5;
@@ -106,17 +106,17 @@ body{
     color: #e10600;
 }
 .teamBanner{
+    gap: 10px;
     margin: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
 }
 .teamBanner a video{
-    border-radius: 15px;
     width: 17vw;
     height: auto;
     transition: all 0.2s ease;
+    border-radius: 15px;
 }
 .teamBanner a video:hover{
     transform: scale(1.03);
@@ -127,10 +127,10 @@ body{
 .asideContainer{
     font-size: clamp(0.3rem, 1.3vw, 1rem);
     width: 15vw;
+    transition: all 0.2s ease-in-out;
+    gap: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    transition: all 0.2s ease-in-out;
 }
 .asideContainer:hover{
     width: 20%;
@@ -186,26 +186,26 @@ body{
     flex-direction: column;
 }
 .footerMainContainerLogo {
+    gap: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .footerMainContainerLogo hr {
-    flex: 1;
     border: none;
     border-top: #e10600 solid 5px;
     border-bottom: #e10600 solid 5px;
     padding-block: 2px;
     transform: skewX(-50deg);
     margin: 0;
+    flex: 1;
 }
 .footerMainContainer1{
+    margin: 5px 10px 50px;
+    column-gap: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    column-gap: 100px;
-    margin: 5px 10px 50px;
 }
 .footerMainContainer1 h3{
     font-family: "Orbitron", sans-serif;
@@ -233,26 +233,26 @@ body{
 .fiaLogo img{
     width: 100px;
     height: auto;
+    transition: all 0.1s ease;
     border-radius: 10px;
     margin-bottom: 20px;
     margin-left: 10px;
-    transition: all 0.1s ease;
 }
 .sponsorsLogo{
+    height: fit-content;
     padding-bottom: 2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    height: fit-content;
 }
 .sponsorsLogo img{
     background-color: #0e0e0e00;
     padding: 10px;
-    border-radius: 10px;
     width: 7vw;
     height: auto;
     transition: all 0.1s ease;
+    border-radius: 10px;
 }
 .sponsorsLogo img:hover{
     background-color: #121212;
@@ -263,11 +263,11 @@ body{
     transition: all 0.1s ease;
 }
 .footerBottom p {
+    color: #262626;
     font-size: 0.7rem;
     padding: 10px;
     text-align: center;
     margin: 0;
-    color: #262626;
 }
 @media (max-width: 768px) { /*Mobile View (well I guess it works? napagtripan lang sir)*/
     #f1Logo{
@@ -275,8 +275,8 @@ body{
         height: auto;
     }
     .searchBarContainer{
-        padding: 1px;
         width: 120px;
+        padding: 1px;
         position: absolute;
         right: 20px;
         top: 10%;
@@ -284,8 +284,8 @@ body{
     #searchBarInput{
         color: #e5e5e5;
         background: #222;
-        padding: 5px;
         width: 70px;
+        padding: 5px;
         border-radius: 20px;
         border: none;
         outline: none; 
@@ -294,8 +294,8 @@ body{
         font-size: 0.8rem;
     }
     .headerMain {
-        position: relative;
         padding: 2px 10px 5px;
+        position: relative;
     }
     .sectionMainHeader{
         padding: 1px 5px;
@@ -352,11 +352,11 @@ body{
 }
 @media (max-width: 1024px) { /*Tablet view*/
     .footerMainContainer1{
+        margin: 5px 10px 50px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 100px;
-        margin: 5px 10px 50px;
     }
     .sponsorsLogo img{
         width: 50px;
