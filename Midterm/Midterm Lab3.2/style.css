@@ -90,13 +90,6 @@ body{
     flex-direction: row;
     gap: 10px;
 }
-.layoutMain{
-    margin-block: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-}
 .articleMainContent{
     color: #e5e5e5;
     background-color: #1a1a1a;
@@ -195,17 +188,17 @@ body{
 .footerMainContainerLogo {
     display: flex;
     align-items: center;
-    gap: 10px; /* space between logo and line */
+    gap: 10px;
 }
 
 .footerMainContainerLogo hr {
-    flex: 1; /* take all remaining space */
+    flex: 1;
     border: none;
     border-top: #e10600 solid 5px;
     border-bottom: #e10600 solid 5px;
     padding-block: 2px;
-    transform: skewX(-50deg); /* slightly less skew to prevent clipping */
-    margin: 0; /* remove default margin */
+    transform: skewX(-50deg);
+    margin: 0;
 }
 .footerMainContainer1{
     display: flex;
