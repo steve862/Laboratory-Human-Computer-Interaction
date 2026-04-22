@@ -1,0 +1,298 @@
+html{
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.headerMain{ /*Header*/
+    background-color: rgb(43, 43, 43);
+}
+#webLogo{ 
+    color: white;
+    padding: 5px;
+    float: left;
+    margin-top: 0;
+}
+#webLogo span{
+    color: rgb(72, 228, 0);
+}
+#webLogo hr{
+    position: absolute;
+    width: 110vw;
+    margin-inline: -0.5rem;
+    left: 0;
+}
+.navMain ul{ /*Nav*/
+    color: white;
+    list-style: none;
+    padding: 10px;
+    float: right;
+    margin-top: 0;
+}
+.navMain li{
+    display: inline-block;
+    margin-inline: 20px;
+    margin-block: 0.3rem;
+}
+.navMain a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.navMain a:hover{
+    text-decoration: underline;
+}
+.asideContainer{ /*Aside*/
+    display: inline-block;
+    padding: 10px;
+    position:absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    border-right: solid 1px white;
+    transition: all 0.3s ease;
+}
+.asideContainer:hover{
+    padding: 20px;
+}
+.asideContainer label{
+    font-size: 0%;
+    transition: all 0.3s ease;
+}
+.asideContainer:hover label{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.radio input {
+    display: none;
+}
+.radio{
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin: 10px 0;
+}
+.radio span::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.mercury input:checked + span::before {
+    background: gray;
+    box-shadow: 0 0 8px gray;
+}
+.venus input:checked + span::before {
+    background: orange;
+    box-shadow: 0 0 8px orange;
+}
+.earth input:checked + span::before {
+    background: rgb(0, 68, 255);
+    box-shadow: 0 0 10px rgb(0, 68, 255);
+}
+.mars input:checked + span::before {
+    background: red;
+    box-shadow: 0 0 10px red;
+}
+.jupiter input:checked + span::before {
+    background: gold;
+    box-shadow: 0 0 10px gold;
+}
+.texts h1 { /*Planet Name*/
+    color: white;
+    letter-spacing: 1px;
+    font-size: 7rem;
+    position: absolute;
+    display: none;
+    float: left;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.mainContainer:has(#mercury:checked) .mercuryContent h1,
+.mainContainer:has(#venus:checked) .venusContent h1,
+.mainContainer:has(#earth:checked) .earthContent h1,
+.mainContainer:has(#mars:checked) .marsContent h1,
+.mainContainer:has(#jupiter:checked) .jupiterContent h1{
+    display: block;
+    animation: slideRightToLeft 0.6s ease forwards;
+}
+.texts h1 span { /*Planet Description*/
+    font-weight: 400;
+    width: 50%;
+    display: none;
+    font-size: 1.1rem;
+    margin: 0;
+}
+.mainContainer:has(#mercury:checked) .mercuryContent h1 span,
+.mainContainer:has(#venus:checked) .venusContent h1 span,
+.mainContainer:has(#earth:checked) .earthContent h1 span,
+.mainContainer:has(#mars:checked) .marsContent h1 span,
+.mainContainer:has(#jupiter:checked) .jupiterContent h1 span{
+    display: block;
+    animation: slideRightToLeft 0.6s ease forwards;
+}
+.images img { /*Images Planets*/
+    display: none;
+    margin-top: 5%;
+    height: 50vw;
+    width: auto;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.mainContainer:has(input:checked) .images img {
+    display: none;
+}
+.mainContainer:has(#mercury:checked) .mercury img,
+.mainContainer:has(#venus:checked) .venus img,
+.mainContainer:has(#earth:checked) .earth img,
+.mainContainer:has(#mars:checked) .mars img,
+.mainContainer:has(#jupiter:checked) .jupiter img {
+    animation: slideRightToLeft 0.6s ease forwards;
+    display: block;
+}
+@keyframes slideRightToLeft{
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.footerMain:hover{ /*Footer*/
+    color: white;
+    font-size: 0.7rem;
+    padding: 1px;
+}
+.footerMain{
+    color: rgba(0, 0, 0, 0);
+    font-size: 0;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: solid 1px rgb(255, 255, 255);
+    border-top: solid 1px rgb(255, 255, 255);
+    border-right: solid 1px rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+@media (max-width: 1024px) { /*Tablet View*/
+    html{
+        font-size: 0.9rem;
+    }
+    .asideContainer{
+        background-color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 1;
+    }
+    .asideContainer:hover{
+        padding: 5px;
+    }
+    .asideContainer label{
+        font-size: 1rem;
+    }
+    .radio span::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid white;
+        margin-right: 20px;
+        margin-block: 10px;
+        transition: 0.3s;
+    }
+    .texts h1{
+        position:absolute;
+        font-size: 5rem;
+        top: 10%;
+        left: 4%;
+        transform: translateY(-50%);
+    }
+    .images img {
+        display: none;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100vw;
+        width: auto;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    .footerMain{
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        padding: 1px;
+        font-size: 4px;
+        width: 50%;
+        text-align: center;
+    }
+    .footerMain:hover{
+        width: 50%;
+        padding: 1px;
+        font-size: 4px;
+    }
+}
+@media (max-width: 600px) { /*Movile View*/
+    html{
+        font-size: 0.5rem;
+    }
+    #webLogo{
+        font-size: 1.5rem;
+    }
+    .navMain ul{
+        font-size: 1rem;
+    }
+    .navMain li{
+        display: inline-block;
+        margin-inline: 5px;
+        margin-block: 0;
+    }
+    .texts h1{
+        position:absolute;
+        font-size: 5rem;
+        top: 15%;
+        left: 4%;
+        transform: translateY(-50%);
+    }
+    .images img {
+        display: none;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 130vw;
+        width: auto;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    .footerMain{
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        padding: 1px;
+        font-size: 4px;
+        width: 50%;
+        text-align: center;
+    }
+    .footerMain:hover{
+        width: 50%;
+        padding: 1px;
+        font-size: 4px;
+    }
+}
