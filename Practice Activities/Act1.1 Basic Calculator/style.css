@@ -1,0 +1,77 @@
+html{
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+}
+article{
+    background-color: rgb(36, 36, 36);
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+#display{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    width: auto;
+    height: 10vh;
+    margin-block: 10px;
+}
+.btn button{
+    color: rgb(218, 218, 218);
+    font-size: 20px;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    margin: 2px;
+}
+.opt{
+    background-color: rgb(44, 44, 44);
+}
+.clear{
+    background-color: rgb(55, 55, 55);
+}
+.num{
+    background-color: rgb(55, 55, 55);
+}
+.opt:hover{
+    background-color: rgb(55, 55, 55);
+}
+.num:hover, .clear:hover{
+    background-color: rgb(44, 44, 44);
+}
+
+.equal{
+    background-color: rgb(121, 149, 226);
+}
+.equal:hover, .equal:active{
+    background-color: rgb(106, 135, 214);
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 20px;
+    }
+    html{
+        margin-top: 50%;
+    }
+    article{
+        width: 80vw;
+    }
+    #display{
+        height: 7vh;
+    }
+    .btn button{
+        font-size: 15px;
+        width: 24vw;
+        height: 5vh;
+    }
+}

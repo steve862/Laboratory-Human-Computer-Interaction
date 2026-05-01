@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <h1>Calculator</h1>
+                <div class="displayContainter">
+                    <h1 id="display">&nbsp;<span id="displayValue"></span></h1>
+                </div>
+            </header>
+            <section>
+                <div class="btn">
+                    <button class="opt" value="x" onclick="Value(this.value)">x</button>
+                    <button class="opt" value="+" onclick="Value(this.value)">+</button>
+                    <button class="opt" value="-"onclick="Value(this.value)">-</button><br>
+                    <button class="opt" value="÷"onclick="Value(this.value)">÷</button>
+
+                    
+                    <button class="clear" value="CE"onclick="Value(this.value)">CE</button>
+                    <button class="clear" value="C"onclick="Value(this.value)">C</button><br>
+                    <button class="num" value="7"onclick="Value(this.value)">7</button>
+                    <button class="num" value="8"onclick="Value(this.value)">8</button>
+                    <button class="num" value="9"onclick="Value(this.value)">9</button><br>            
+                    
+                    <button class="num" value="4"onclick="Value(this.value)">4</button> 
+                    <button class="num" value="5"onclick="Value(this.value)">5</button>
+                    <button class="num" value="6"onclick="Value(this.value)">6</button><br>                  
+
+                    <button class="num" value="1"onclick="Value(this.value)">1</button>
+                    <button class="num" value="2"onclick="Value(this.value)">2</button>
+                    <button class="num" value="3"onclick="Value(this.value)">3</button><br>
+                    <button class="num" value="remove"onclick="Value(this.value)">⌫</button>
+                    <button class="num" value="0"onclick="Value(this.value)">0</button>
+                    <button class="num" value="."onclick="Value(this.value)">.</button><br>
+                    
+                    <button class="equal" onclick="calculate()">=</button>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+<script src="./srcipt.js"></script>
+</html>
