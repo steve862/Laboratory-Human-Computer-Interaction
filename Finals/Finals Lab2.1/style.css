@@ -1,0 +1,154 @@
+html{
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+}
+p{
+font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+/*Header & Navigation*/
+.mainHeader{
+    background-color: rgba(10, 10, 10, 0.3); 
+    padding: 5px;
+    margin: -0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.mainNav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mainNav li {
+    padding: 20px 30px;
+}
+.mainNav a{
+    color: white;
+    text-decoration: none;
+}
+.mainNav li:hover a{
+    text-decoration: underline;
+}
+.mainNav li:hover{
+    background-color: black;
+}
+/*Banner*/
+.bannerContainer{
+    margin-top: 10px;
+}
+#banner{
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    margin-left: -0.5rem;
+}
+.bannerContentContainer{
+    font-size: 2rem;
+    width: 30vw;
+    position: absolute;
+    top: 30%;
+    margin: 5%;
+}
+.bannerButtonContainer button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border: white solid 2px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.bannerButtonContainer #btn1:hover{
+    background-color: rgba(255, 255, 255, 0.034);
+    backdrop-filter: blur(10px);
+}
+.bannerButtonContainer #btn2:hover{
+    color: black;
+    backdrop-filter: blur(10px);
+    background-color: white;
+}
+/* Article Contents*/
+.articleHeader h2{
+    font-size: 2rem;
+}
+.articleContainer{
+    margin: 20px;
+}
+.projectContentsCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    background-color: rgb(15, 15, 15);
+    width: fit-content;
+    border: rgba(255, 255, 255, 0) solid 2px;
+    border-radius: 10px;
+}
+.card img{
+    width: 500px;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 10px;
+}
+.cardTxt{
+    padding: 10px;
+}
+.card:hover{
+    border: white solid 2px;
+}
+
+
+
+@media (max-width: 768px) {
+    html{
+        font-size: 0.8rem;
+    }
+    .mainHeader{
+        font-size: 0.7rem;
+    }
+    .mainNav li {
+        padding: 10px;
+    }
+    /*Banner Mobile*/
+    #banner{
+        height: auto;
+    }
+    .bannerContentContainer{
+        top: 10%;
+        font-size: 0.7rem;
+        width: 60vw;
+        position: absolute;
+        margin: 5%;
+    }
+    .bannerButtonContainer button{
+        font-size: 0.7rem;
+        padding: 10px;
+        border: white solid 1px;
+    }
+    /* Article Contents Mobile*/
+    .card img{
+        width: 250px;
+        object-fit: cover;
+        height: 150px;
+        border-radius: 10px;
+    }
+}
