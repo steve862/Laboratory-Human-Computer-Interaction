@@ -1,0 +1,238 @@
+body{
+    background-color: black;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    overflow-x: hidden;
+}
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+.mainHeader { grid-area: header; }
+.navBar { grid-area: sidebar;}
+.mainContainer {grid-area: main; }
+.mainFooter {grid-area: footer;}
+.mainHeader{
+    color: white;
+    background-color: #3F72AF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#logo{
+    margin: 10px;
+}
+.navBar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.navBar a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.mainAside{
+    line-height: 0.7rem;
+    color: #112D4E;
+    background-color: #DBE2EF;
+    padding: 10px;
+}
+.mainAside .asideContainer{
+    position: sticky;
+    top: 10%;
+}
+.mainAside ul{
+    list-style: none;
+    padding-left: 3px;
+}
+.mainAside p{
+    background-color: #DBE2EF;
+    padding: 10px;
+    margin: 0;
+    animation: fadeUpRight 0.5s ease-out forwards;
+}
+.mainAside a{
+    color: #112D4E;
+    text-decoration: none;
+}
+.mainAside p:hover, .mainAside p:active{
+    color: white;
+    background-color: #3F72AF;
+}
+/*Hero Banner*/
+#heroBannerImg{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.heroBannerTXT{
+    color: white;
+    position: absolute;
+    top: 10%;
+    margin: 30px;
+    animation: fadeUpLeft 0.5s ease-out forwards;
+}
+#bannerHead{
+    font-size: 3rem;
+}
+#bannerBody{
+    font-size: 2rem;
+}
+#btnBanner{
+    font-size: 1.2rem;
+    color: white;
+    background:none;
+    padding: 15px 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#btnBanner:hover{
+    background-color: #2f6db9;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+/*Contents*/
+.mainContainer{
+    color: #112D4E;
+    background-color: #F9F7F7;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 100px 50px;
+}
+.card{
+    background-color:#e3e5eb;
+    border-radius: 10px;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+.cardImage{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card .CardContent{
+    padding: 10px;
+}
+/*footer*/
+.mainFooter{
+    color: white;
+    background-color: #112D4E;
+    padding: 10px;
+    
+}
+@media (max-width: 768px) {
+    .page {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+    #logo{
+        font-size: 1rem;
+        margin: 5px;
+    }
+    .navBar a{
+        font-size: 0.5rem;
+        margin: 3px;
+    }
+    .mainAside{
+        position: sticky;
+        top: 5%;
+        z-index: -1;
+    }
+    /*Hero Banner*/
+    #heroBannerImg{
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+        object-position: 30% 50%;
+    }
+    .heroBannerTXT{
+        color: white;
+        position: absolute;
+        top: 55%;
+        margin: 30px;
+    }
+    #bannerHead{
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+    #bannerBody{
+        font-size: 1rem;
+    }
+    #btnBanner{
+        font-size: 1rem;
+        color: white;
+        background:none;
+        padding: 10px 25px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .card-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 50px 20px;
+    }
+    .cardImage{
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .HeadContent{
+        line-height: 0;
+    }
+    .CardContent p{
+        font-size: 0.7rem;
+    }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeUpLeft {
+  from {
+    opacity: 0;
+    transform: translate(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes fadeUpRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
